@@ -1,14 +1,14 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using RemoveTheDead.Helpers;
-using RemoveTheDead.Utilties;
+using RemoveTheDead.Utilities;
 using System;
 using UnityEngine;
-using static RemoveTheDead.Utilties.VersionChecker;
+using static RemoveTheDead.Utilities.VersionChecker;
 
 namespace RemoveTheDead
 {
-    [BepInPlugin("com.jbs4bmx.RemoveTheDead","RTD","390.0.1")]
+    [BepInPlugin("com.jbs4bmx.RemoveTheDead","RTD","390.0.2")]
     public class RTDPlugin : BaseUnityPlugin
     {
         public const int TarkovVersion = 30626;

@@ -6,7 +6,7 @@ using System;
 using System.Diagnostics;
 using UnityEngine;
 
-namespace RemoveTheDead.Utilties
+namespace RemoveTheDead.Utilities
 {
     [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = false)]
     public class VersionChecker : Attribute
@@ -27,7 +27,7 @@ namespace RemoveTheDead.Utilties
             int buildVersion = RemoveTheDead.RTDPlugin.TarkovVersion;
             if (currentVersion != buildVersion)
             {
-                string errorMessage = $"ERROR: This version of RemoveTheDead v1.1.0 was built for Tarkov {buildVersion}, but you are running {currentVersion}. Please download the correct plugin version.";
+                string errorMessage = $"ERROR: This version of RemoveTheDead was built for Tarkov {buildVersion}, but you are running {currentVersion}. Please download the correct plugin version.";
                 Logger.LogError(errorMessage);
                 Chainloader.DependencyErrors.Add(errorMessage);
 

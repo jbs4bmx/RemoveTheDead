@@ -2,7 +2,7 @@
 
 
 ## Description
-A BepInEx mod for Escape From Tarkov via the modding framework, SPT (aka, SPTarkov, Single Player Tarkov, SPT, AKI, etc.). This allows you to set a radius and time interval in which dead bots will be removed from the map. The aim of this mod is to boost performance and increase in-game fps by reducing the number of objects (in this case, dead bots) being processed by the CPU. <br>
+A BepInEx mod for Escape From Tarkov via the modding framework, SPT (aka, SPTarkov, Single Player Tarkov, SPT, etc.). This allows you to set a radius and time interval in which dead bots will be removed from the map. The aim of this mod is to boost performance and increase in-game fps by reducing the number of objects (in this case, dead bots) being processed by the CPU. <br>
 
 Also known as RTD. <br>
 Client mod for Single Player Tarkov (SPT) that removes dead bodies from the map.

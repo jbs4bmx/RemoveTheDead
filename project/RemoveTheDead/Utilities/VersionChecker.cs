@@ -30,7 +30,7 @@ namespace RemoveTheDead.Utilities
                 string errorMessage = $"ERROR: This version of RemoveTheDead was built for Tarkov {buildVersion}, but you are running {currentVersion}. Please download the correct plugin version.";
                 Logger.LogError(errorMessage);
                 Chainloader.DependencyErrors.Add(errorMessage);
-
+                
                 if (Config != null)
                 {
                     // TypeofThis results in a bogus config entry in the BepInEx config file for the plugin, but it shouldn't hurt anything
@@ -46,10 +46,8 @@ namespace RemoveTheDead.Utilities
                         }
                     ));
                 }
-
                 return false;
             }
-
             return true;
         }
 

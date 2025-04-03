@@ -8,20 +8,20 @@ using static RemoveTheDead.Utilities.VersionChecker;
 
 namespace RemoveTheDead
 {
-    [BepInPlugin("com.jbs4bmx.RemoveTheDead","RTD","311.2.1")]
+    [BepInPlugin("com.jbs4bmx.RemoveTheDead","RTD","311.2.2")]
     [BepInDependency("com.SPT.core", "3.11.2")]
     public class RTDPlugin : BaseUnityPlugin
     {
         public const int TarkovVersion = 35392;
 
+        internal static Service_Remover Script;
         internal static GameObject Hook;
 
-        internal static ConfigEntry<bool> DropItems;
         internal static ConfigEntry<bool> EnableClean;
         internal static ConfigEntry<float> TimeToClean;
         internal static ConfigEntry<int> DistToClean;
-        internal static ConfigEntry<float> DropItemsChance;
-        public static ConfigEntry<string> RTDButton { get; set; }
+        internal static ConfigEntry<string> RTDButton { get; set; }
+        internal static ConfigEntry<KeyboardShortcut> RTDShortcut;
 
         void Awake()
         {
@@ -51,13 +51,15 @@ namespace RemoveTheDead
             TimeToClean = Config.Bind(
                 sectionName,
                 "Time to remove",
-                120f,
+                15f,
                 new ConfigDescription
                 (
-                    "Time to remove bodies.",
-                    null,
+                    "Time (in minutes) to remove bodies.",
+                    new AcceptableValueRange<float>(1f, 60f),
                     new ConfigurationManagerAttributes
                     {
+                        IsAdvanced = false,
+                        ShowRangeAsPercent = false,
                         Order = 3,
                     }
                 )
@@ -90,19 +92,41 @@ namespace RemoveTheDead
                     }
                 )
             );
+            RTDShortcut = Config.Bind(
+                sectionName,
+                "Remove all dead bodies now",
+                new KeyboardShortcut(KeyCode.F5),
+                new ConfigDescription(
+                    "The keyboard shortcut that runs the body removal service instantly.",
+                    null,
+                    new ConfigurationManagerAttributes
+                    {
+                        Order = 0
+                    }
+                )
+            );
 
             Hook = new GameObject("IR Object");
+            Script = Hook.AddComponent<Service_Remover>();
             DontDestroyOnLoad(Hook);
-
-            
         }
+
         public void RTDButtonActionDrawer(ConfigEntryBase entry)
         {
             bool button = GUILayout.Button("Remove The Dead", GUILayout.ExpandWidth(true));
             if (button)
             {
                 var runner = new Service_Remover();
-                runner.RunRemovalNow(true);
+                runner.RunRemovalNow();
+            }
+        }
+
+        public void Update()
+        {
+            if (UnityEngine.Input.GetKeyDown(RTDShortcut.Value.MainKey))
+            {
+                var runner = new Service_Remover();
+                runner.RunRemovalNow();
             }
         }
     }

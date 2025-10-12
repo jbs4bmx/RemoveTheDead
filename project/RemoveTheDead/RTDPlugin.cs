@@ -8,11 +8,11 @@ using static RemoveTheDead.Utilities.VersionChecker;
 
 namespace RemoveTheDead
 {
-    [BepInPlugin("com.jbs4bmx.RemoveTheDead","RTD","311.3.1")]
-    [BepInDependency("com.SPT.core", "3.11.0")]
+    [BepInPlugin("com.jbs4bmx.RemoveTheDead","RTD","4.0.0")]
+    [BepInDependency("com.SPT.core", "4.0.0")]
     public class RTDPlugin : BaseUnityPlugin
     {
-        public const int TarkovVersion = 35392;
+        public const int TarkovVersion = 40087;
 
         internal static Service_Remover Script;
         internal static GameObject Hook;

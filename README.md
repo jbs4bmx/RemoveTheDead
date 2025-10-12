@@ -57,7 +57,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 📋 About The Project
 Type: Client Mod</br>
 Disclaimer: **This mod is provided _as-is_ with _no guarantee_ of support.**
 
@@ -67,9 +67,9 @@ Also known as RTD.</br>
 Client mod for Single Player Tarkov (SPT) that removes dead bodies from the map.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
-### Built With
+### 🔨 Built With
 | Frameworks/Libraries                                      | Name         | Link                                       |
 | :-------------------------------------------------------: | :----------: | :----------------------------------------: |
 | <img src="./images/icons/CS.svg" width="48">              | `C Sharp`    | [C# Documentation][CSharp-url]             |
@@ -78,12 +78,12 @@ Client mod for Single Player Tarkov (SPT) that removes dead bodies from the map.
 | :---------------------------------------------------------: | :-------------: | :---------------------------------------: |
 | <img src="./images/icons/VisualStudio-Dark.svg" width="48"> | `Visual Studio` | [Visual Studio Website][VisualStudio-url] |
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## 🎮 Getting Started
 This section will explain how to install and use this mod.
 
 ### Prerequisites
@@ -96,18 +96,18 @@ Start by downloading the mod from the [Releases](https://github.com/jbs4bmx/Remo
 
 Follow these steps to install and configure the mod:
   1. Extract the contents of the zip file into the root of your [SPT] folder.
-     - That's the same location as "SPT.Server.exe" and "SPT.Launcher.exe".
+     - That's the same location as "EscapeFromTarkov.exe".
   2. Start SPT.Server.exe and wait until it fully loads.
   3. Start SPT.Launcher.exe.
   4. Now you can launch the game.
   5. To configure or use the mod, press F12 while in game. Mod will be listed among client mods in the BepInEx menu.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
 
 
 <!-- CONFIGURATION EXAMPLES -->
-## Configuration
+## ⚙ Configuration
 All configurations are done within the BepInEx F12 menu while in-game.
 
 Customizations:
@@ -115,29 +115,29 @@ Customizations:
   - Change minimum distance from player that bodies must be at in order to be removed. (distance expressed in meters)
   - Instant removal button in BepInEx menu (F12). Now you can instantly trigger the body removal to occur. Any bodies within your minimum distance from you will not be removed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
-### Mod FAQ
+## ⚠ Mod FAQ
 **Q: Where do I report bugs found with the current version of the mod?** <br>
 A: You can report bugs for the current version of this mod on the [RTD Mod Page](https://hub.sp-tarkov.com/files/file/2124-remove-the-dead/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
 
 
 <!-- ROADMAP -->
-## Roadmap
-- [X] Add Changelog
-- [ ] Bind instant removal button to desired key on keyboard for quicker removal.
+## 🚗 Roadmap
+- ✅ Add Changelog
+- ❌ Bind instant removal button to desired key on keyboard for quicker removal.
 
 Suggest changes or view/report issues [here](https://github.com/jbs4bmx/RemoveTheDead/issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## 🚧 Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
@@ -152,29 +152,27 @@ Don't forget to give the project a star! Thanks again!
 You can also buy me a coffee! (This is not required, but I greatly appreciate any support provided.)</br>
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X611JH15)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
 
 
 <!-- LICENSE -->
-## License
+## 🪧 License
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## 👍 Acknowledgments
 Contributors:</br>
 DJLang, Helldiver, Devraccoon, CactusPie
   - Some code is borrowed from ["Body Disposal Service Maid (B.D.S.M.)" by DJLang](https://github.com/KillerDJLang/BDSM), which is an updated version of ["Body Disposal Service Maid (B.D.S.M.)" by Helldiver](https://github.com/Volomon/BDSM).
-    - [SPT Link for B.D.S.M.](https://hub.sp-tarkov.com/files/file/1620-b-d-s-m-body-disposal-service-maid/?highlight=Body%20Disposal)
 
   - Some code is borrowed from [RAM Cleaner Fix by Devraccoon](https://github.com/CactusPie/SPT-RamCleanerInterval), which is an updated version of [RAM Cleaner Fix by CactusPie](https://github.com/CactusPie/SPT-RamCleanerInterval).
-    - [SPT LINK for RAM Cleaner Fix](https://hub.sp-tarkov.com/files/file/1827-ram-cleaner-fix/?highlight=RAM%20Cleaner)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
 
 
 
